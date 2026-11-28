@@ -4,72 +4,158 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Fevro Browser Privacy Policy</title>
+<meta name="description" content="Privacy Policy for Fevro Browser, a fast, private Android web browser.">
 <style>
-  :root { --bg:#fbfaf7; --fg:#1d1f24; --muted:#5c616b; --rule:#dcd9d0; --accent:#0b5c6b; --mark:#fff2b3; color-scheme: light dark; }
-  @media (prefers-color-scheme: dark) {
-    :root { --bg:#14171a; --fg:#e8e6e1; --muted:#a2a7b0; --rule:#2c3238; --accent:#7cc7d6; --mark:#4a4112; }
+  :root {
+    --bg: #fbfbfd;
+    --text: #1c2233;
+    --muted: #5a6479;
+    --accent: #3b5bdb;
+    --rule: #dfe3ec;
+    --panel: #eef1fb;
   }
-  html { background: var(--bg); }
-  body { margin:0 auto; max-width:42rem; padding:2.5rem 1.25rem 4rem; color:var(--fg); background:var(--bg);
-         font:1.0625rem/1.65 Georgia, "Times New Roman", serif; }
-  h1 { font:700 2rem/1.2 system-ui, -apple-system, "Segoe UI", sans-serif; margin:0 0 .4rem; }
-  h2 { font:650 1.2rem/1.3 system-ui, -apple-system, "Segoe UI", sans-serif; margin:2.2rem 0 .5rem; padding-top:1.2rem; border-top:1px solid var(--rule); }
-  p, li { margin:.6rem 0; }
-  ul { padding-left:1.3rem; }
-  a { color:var(--accent); }
-  .meta { color:var(--muted); font-family: system-ui, -apple-system, "Segoe UI", sans-serif; font-size:.95rem; }
-  mark { background:var(--mark); color:inherit; padding:0 .2em; }
-  table { width:100%; border-collapse:collapse; font-size:.97rem; display:block; overflow-x:auto; }
-  th, td { text-align:left; padding:.5rem .6rem; border-bottom:1px solid var(--rule); vertical-align:top; }
-  th { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; font-weight:650; }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1320;
+      --text: #e6e9f2;
+      --muted: #9aa3b8;
+      --accent: #8fa8ff;
+      --rule: #262c40;
+      --panel: #171c30;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.7 Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+  }
+  main { max-width: 44rem; margin: 0 auto; padding: 3rem 1.25rem 4rem; }
+  h1, h2, .meta, nav { font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  h1 { font-size: 2.1rem; line-height: 1.2; margin: 0 0 .75rem; }
+  h2 { font-size: 1.25rem; margin: 2.5rem 0 .5rem; padding-top: 1.5rem; border-top: 1px solid var(--rule); }
+  p, ul { margin: .75rem 0; }
+  ul { padding-left: 1.25rem; }
+  li { margin: .4rem 0; }
+  a { color: var(--accent); }
+  a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+  .meta { background: var(--panel); border-radius: 10px; padding: 1rem 1.25rem; font-size: .95rem; color: var(--muted); }
+  .meta strong { color: var(--text); }
+  .meta div { margin: .2rem 0; }
+  nav { font-size: .95rem; margin: 1.5rem 0 0; }
+  nav ol { columns: 2; column-gap: 2rem; padding-left: 1.25rem; margin: .5rem 0 0; }
+  nav li { margin: .2rem 0; }
+  footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: .9rem; }
+  @media (max-width: 560px) {
+    h1 { font-size: 1.7rem; }
+    nav ol { columns: 1; }
+  }
 </style>
 </head>
 <body>
-<h1>Fevro Browser Privacy Policy</h1>
-<p class="meta">Effective date: November 25, 2026</p>
+<main>
+  <h1>Fevro Browser Privacy Policy</h1>
 
-<p>Fevro Browser (“the app”) is a web browser for Android, published by Ash (“we”, “us”). This policy explains what information the app collects, why, and what choices you have.</p>
+  <div class="meta">
+    <div><strong>Effective date:</strong> November 25, 2026</div>
+    <div><strong>Developer:</strong> Ash</div>
+    <div><strong>Contact:</strong> <a href="mailto:ashgang10@proton.me">ashgang10@proton.me</a></div>
+    <div><strong>App:</strong> Fevro Browser (Android package: com.aistudio.swiftweb.k7m9px)</div>
+  </div>
 
-<h2>Information we collect</h2>
-<p>The app uses Google Firebase Analytics and Firebase Installations to understand how the app is used and to keep it working. Through these services, the app collects:</p>
-<table>
-  <tr><th>Information</th><th>Why</th></tr>
-  <tr><td>App instance ID and Firebase installation ID (random identifiers generated for each install)</td><td>Count unique installs and users, and measure retention</td></tr>
-  <tr><td>Device and app information: device model, operating system version, language, app version</td><td>Fix compatibility problems and improve the app</td></tr>
-  <tr><td>Usage events: app opens, screen views, and similar interactions with the app</td><td>Learn which features are used</td></tr>
-  <tr><td>Advertising ID (Google Advertising ID or Amazon advertising ID, where available)</td><td>Collected by Firebase Analytics for attribution and measurement</td></tr>
-  <tr><td>IP address, used by Google to infer approximate location such as country or city</td><td>Understand where the app is used. Google does not store the full IP address in Analytics reports.</td></tr>
-</table>
-<p>The app does not request access to your device’s GPS location, contacts, camera roll, microphone, or accounts. It does not require you to create an account.</p>
+  <nav aria-label="Contents">
+    <strong>Contents</strong>
+    <ol>
+      <li><a href="#intro">Introduction</a></li>
+      <li><a href="#device">Information stored on your device</a></li>
+      <li><a href="#analytics">Analytics</a></li>
+      <li><a href="#third-parties">Information sent to third parties</a></li>
+      <li><a href="#permissions">Permissions</a></li>
+      <li><a href="#use">How we use information</a></li>
+      <li><a href="#retention">Retention and security</a></li>
+      <li><a href="#rights">Your choices and rights</a></li>
+      <li><a href="#children">Children's privacy</a></li>
+      <li><a href="#transfers">International transfers</a></li>
+      <li><a href="#changes">Changes to this policy</a></li>
+      <li><a href="#contact">Contact us</a></li>
+    </ol>
+  </nav>
 
-<h2>What we do not collect</h2>
-<p>We do not sell your personal information. We do not show ads in the app. We do not use the information above to identify you by name.</p>
+  <h2 id="intro">1. Introduction</h2>
+  <p>This Privacy Policy explains what information Fevro Browser ("the App", "we", "us") collects, how it is used, and the choices you have. We designed the App to keep your browsing data on your device. We do not run our own servers for your browsing data, and we do not sell your personal information.</p>
+  <p>By using the App, you agree to this Privacy Policy. If you do not agree, please do not use the App.</p>
 
-<h2>Your browsing data</h2>
-<p>Browsing history, cookies, bookmarks, and saved settings are stored on your device. We do not receive them on our servers. Websites you visit have their own privacy practices, which this policy does not cover.</p>
+  <h2 id="device">2. Information stored on your device</h2>
+  <p>The following information is stored locally on your device and is not sent to us:</p>
+  <ul>
+    <li><strong>Browsing history:</strong> page titles, addresses (URLs) and visit times.</li>
+    <li><strong>Bookmarks and Speed Dial:</strong> titles, URLs and folders you create.</li>
+    <li><strong>Downloads:</strong> file names, source URLs, file types, progress and the location of files you download.</li>
+    <li><strong>Settings and preferences:</strong> theme, search engine choice (including custom search engines you add), HTTPS-Only Mode, clear-on-exit options and similar settings.</li>
+    <li><strong>SwiftShield content-blocking data:</strong> your enabled filter lists, custom blocking rules and the list of sites you have allowed.</li>
+    <li><strong>Cookies, cache and site data</strong> stored by the built-in web engine (WebView) while you browse.</li>
+  </ul>
+  <p>You can delete history, downloads, cookies and cache at any time from the App's settings, or by clearing the App's storage in Android settings. Pages opened in an Incognito tab are not saved to your history.</p>
 
-<h2>Third-party services</h2>
-<p>Firebase is provided by Google. Google processes the information listed above on our behalf and under its own terms. Learn more at <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a> and <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</p>
+  <h2 id="analytics">3. Information collected automatically (analytics)</h2>
+  <p>The App uses <strong>Google Firebase Analytics</strong> to understand how the App is used and to improve it. Firebase may collect:</p>
+  <ul>
+    <li>Basic app usage events, such as app opens, daily activity, screens viewed and download actions.</li>
+    <li>Device and app information, such as device model, operating system version, app version, language and approximate region.</li>
+    <li>An app instance identifier generated by Firebase and, where available on your device, your Android Advertising ID.</li>
+    <li>Your IP address, which Google uses to determine approximate location and does not store as part of event data.</li>
+  </ul>
+  <p>This data is processed by Google under <a href="https://policies.google.com/privacy" rel="noopener">Google's Privacy Policy</a> and <a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase's privacy information</a>. We use it only for analytics and app improvement. The App does not display third-party advertising.</p>
+  <p>You can limit this collection by resetting or deleting your Advertising ID in Android settings (Settings &gt; Privacy &gt; Ads), or by contacting us to request deletion (see Section 12).</p>
 
-<h2>How long we keep it</h2>
-<p>Firebase Analytics event data is kept for up to 14 months and is then deleted automatically.</p>
+  <h2 id="third-parties">4. Information sent to third parties when you use the App</h2>
+  <p>As a web browser, the App connects to the internet on your behalf. This necessarily shares some information with the services you choose to use:</p>
+  <ul>
+    <li><strong>Websites you visit</strong> receive your IP address, device and browser details and any information you submit, just as in any browser. Their own privacy policies apply.</li>
+    <li><strong>Search engines.</strong> When you search, your query is sent to the search engine you select (for example Google, DuckDuckGo, Bing, Brave Search, Kagi, or a custom engine you add).</li>
+    <li><strong>Search suggestions.</strong> If search suggestions are enabled, what you type in the address bar may be sent to the suggestion service of your selected engine (for example Google, DuckDuckGo, Bing or Brave) and to Wikipedia to provide suggestions. You can turn suggestions off in settings.</li>
+    <li><strong>Site icons.</strong> The App may request website icons (favicons) from Google's favicon service, which receives the domain of the site.</li>
+    <li><strong>Start page news.</strong> The start page may load headlines from public news feeds (for example BBC News and Google News).</li>
+    <li><strong>Content-blocking lists.</strong> SwiftShield downloads public blocklists from third-party hosts (for example StevenBlack hosts, Peter Lowe's ad server list and the Firebog AdGuard list). These requests do not include your browsing history.</li>
+    <li><strong>Translation.</strong> If you use page translation, the page address is sent to Google Translate.</li>
+  </ul>
+  <p>We do not control these third parties and are not responsible for their privacy practices.</p>
 
-<h2>Your choices</h2>
-<ul>
-  <li><strong>Reset your advertising ID</strong> or opt out of ad personalization in your device’s settings.</li>
-  <li><strong>Uninstall the app</strong> to stop all further collection.</li>
-</ul>
+  <h2 id="permissions">5. Permissions</h2>
+  <p>The App requests only the following Android permissions:</p>
+  <ul>
+    <li><strong>Internet and network state:</strong> to load web pages and check connectivity.</li>
+    <li><strong>Wake lock:</strong> to keep downloads running while your screen is off.</li>
+    <li><strong>Advertising ID and ad services access:</strong> used by Firebase Analytics as described in Section 3.</li>
+  </ul>
+  <p>The App does not request access to your contacts, SMS, call logs, microphone, camera, precise location or device storage permissions.</p>
 
-<h2>Security</h2>
-<p>Data sent to Firebase is encrypted in transit. No method of transmission or storage is completely secure, so we cannot guarantee absolute security.</p>
+  <h2 id="use">6. How we use information</h2>
+  <p>We use information to operate and improve the App, fix bugs, understand which features are used, and keep the App secure. We do not sell your personal information, and we do not use your browsing history for advertising or profiling.</p>
 
-<h2>Children</h2>
-<p>The app is not directed at children under 13, and we do not knowingly collect personal information from them. If you believe a child has provided data through the app, contact us and we will delete it.</p>
+  <h2 id="retention">7. Data retention and security</h2>
+  <p>Local data stays on your device until you delete it. Analytics data held by Google Firebase is retained according to the retention settings configured for the App and Google's policies. We use industry-standard protections and offer an HTTPS-Only Mode that upgrades insecure connections where possible. Some websites may still use unencrypted connections, and no method of transmission or storage is completely secure.</p>
 
-<h2>Changes to this policy</h2>
-<p>If we change this policy, we will post the new version at this address and update the effective date above.</p>
+  <h2 id="rights">8. Your choices and rights</h2>
+  <p>Depending on where you live (for example the European Economic Area, United Kingdom, or California), you may have the right to access, correct, delete or restrict the use of your personal data, to object to processing, and to withdraw consent. Because browsing data is stored only on your device, you can exercise most of these rights directly in the App. For analytics data, contact us at the address below and we will respond within a reasonable time.</p>
 
-<h2>Contact</h2>
-<p>Questions about this policy: <a href="mailto:bba.beyeled@gmail.com">bba.beyeled@gmail.com</a></p>
+  <h2 id="children">9. Children's privacy</h2>
+  <p>The App is not directed to children under 13 (or under 16 where required by local law). We do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us and we will delete it.</p>
+
+  <h2 id="transfers">10. International data transfers</h2>
+  <p>Google may process analytics data in countries other than your own, including the United States. Where required, such transfers rely on appropriate safeguards.</p>
+
+  <h2 id="changes">11. Changes to this policy</h2>
+  <p>We may update this Privacy Policy from time to time. We will post the updated version with a new effective date. Continued use of the App after changes means you accept the updated policy.</p>
+
+  <h2 id="contact">12. Contact us</h2>
+  <p>If you have questions or requests about this Privacy Policy, contact:</p>
+  <p><strong>Ash</strong><br>Email: <a href="mailto:ashgang10@proton.me">ashgang10@proton.me</a></p>
+
+  <footer>&copy; 2026 Ash. Fevro Browser Privacy Policy, effective November 25, 2026.</footer>
+</main>
 </body>
 </html>
